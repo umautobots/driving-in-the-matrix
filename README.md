@@ -107,6 +107,11 @@ INFO:root:Epoch[0] Batch [60]	Speed: 6.76 samples/sec	Train-RPNAcc=0.822298,	RPN
 
 As the epochs complete, the trained parameters will be available inside `training-runs/mxnet-rcnn-gta10k`.
 
+## Training on other segments
+
+To train on 200k or 50k, first download and extract `repro_200k_images.tgz` and `repro_200k_annotations.tgz` and then
+run a similar command as above but with `image_set` set to `2012_trainval50k` or `2012_trainval200k`.
+
 ## Evaluate on KITTI
 
 ### Download the KITTI object detection dataset
