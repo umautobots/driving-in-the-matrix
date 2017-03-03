@@ -133,8 +133,8 @@ If you find this useful in your research please cite:
         Author = {M. Johnson-Roberson and Charles Barto and Rounak Mehta and Sharath Nittur Sridhar and Karl Rosaen and Ram Vasudevan},
         Booktitle = {{IEEE} International Conference on Robotics and Automation},
         Date-Added = {2017-01-17 14:22:19 +0000},
-        Date-Modified = {2017-01-17 14:23:03 +0000},
+        Date-Modified = {2017-02-23 14:37:23 +0000},
         Keywords = {conf},
-        Note = {accepted},
+        Pages = {1--8},
         Title = {Driving in the Matrix: Can Virtual Worlds Replace Human-Generated Annotations for Real World Tasks?},
         Year = {2017}}
