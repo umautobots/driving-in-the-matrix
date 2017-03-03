@@ -24,7 +24,7 @@ Training time per epoch for us was roughly
 ## Download the dataset
 
 Create a directory and download the archive files for 10k images, annotations and image sets from [our website](https://fcav.engin.umich.edu/sim-dataset/).
-Assuming you have downloaded these to a directory named `ditm-data` (driving in the matrix repro):
+Assuming you have downloaded these to a directory named `ditm-data` (driving in the matrix data):
 
 ```
 $ ls -1 ditm-data
