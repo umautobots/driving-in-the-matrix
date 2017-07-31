@@ -4,6 +4,8 @@ Steps to reproduce training results for the paper
 [Driving in the Matrix: Can Virtual Worlds Replace Human-Generated Annotations for Real World Tasks?](https://arxiv.org/abs/1610.01983)
 conducted at [UM & Ford Center for Autonomous Vehicles (FCAV)](https://fcav.engin.umich.edu).
 
+The code to capture the dataset can be found [in our GTAVisionExport repository](https://github.com/umautobots/GTAVisionExport).
+
 ![Teaser?](bbox-and-segments.png)
 
 Specifically, we will train [MXNet RCNN](https://github.com/dmlc/mxnet/tree/master/example/rcnn) on our 
