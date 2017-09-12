@@ -340,7 +340,7 @@ Evaluate 70% overlap:
 ```
 $ mkdir -p training-runs/mxnet-rcnn-gta10k/evaluate-on-kitti-1-epoch/kitti-labels/evaluate70
 $ docker run --rm \
-  -v `pwd`/datasets/kitti/training/label_2:/root/data/object/label_2:ro \
+  -v `pwd`/datasets/kitti:/root/data/ground_truth:ro \
   -v `pwd`/training-runs/mxnet-rcnn-gta10k/evaluate-on-kitti-1-epoch/kitti-labels:/root/results/my-kitti-labels/data:ro \
   -v `pwd`/training-runs/mxnet-rcnn-gta10k/evaluate-on-kitti-1-epoch/kitti-labels/evaluate70:/root/results/my-kitti-labels \
   -it kitti-evaluate ./evaluate_object70 my-kitti-labels
@@ -372,6 +372,15 @@ and you will then have the files available:
 $ ls training-runs/mxnet-rcnn-gta10k/evaluate-on-kitti-1-epoch/kitti-labels/evaluate70
 data  stats_car_detection.txt  stats_car_orientation.txt    stats_cyclist_orientation.txt   stats_pedestrian_orientation.txt
 plot  stats_car_mAP.txt        stats_cyclist_detection.txt  stats_pedestrian_detection.txt
+```
+
+where you can see the 70% mAP:
+
+```
+$ cat training-runs/mxnet-rcnn-gta10k/evaluate-on-kitti-1-epoch/kitti-labels/evaluate70/stats_car_mAP.txt
+0.435010
+0.292753
+0.241420
 ```
 
 You can evaluate the 50% overlap numbers with a similar command per [instructions on wiki](https://github.com/umautobots/nn-dockerfiles/tree/master/kitti-evaluate).
